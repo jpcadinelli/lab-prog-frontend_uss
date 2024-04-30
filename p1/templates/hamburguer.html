@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamburguer - Cantina Universitária</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/detalhe.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Cantina Universitária</h1>
+    </header>
+    <a class="voltar" href="{{url_for('index')}}">Voltar</a>
+    <section class="lanche">
+        <h2>Hamburguer</h2>
+        <img src="{{url_for('static', filename='img/hamburguer.jpg')}}" alt="Hamburguer vendido na cantina universitária">
+        <p class="descricao">O nosso hamburguer é feito só com ingredientes altamente selecionados, possibilitando fazer essa gloriosa obra de arte saborosa!</p>
+        <span class="preco">R$ 49,99</span>
+        <span class="ingredientes">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Pão Brioche Max</li>
+                <li>Blend de 180g de Picanha</li>
+                <li>Queijo Qualho</li>
+                <li>Bacon Defumado</li>
+                <li>Alface Americana</li>
+                <li>Tomate Italiano</li>
+                <li>Molho Especial</li>
+            </ul>
+        </span>
+    </section>
+    <section class="comentarios">
+        <h3>Comentarios</h3>
+        <div class="card-comentarios">
+            <h4>José Orelha</h4>
+            <p class="comentario">Despois que comi este hamburguer, nunca mais comi em casa como ele todo dia!</p>
+        </div>
+        <div class="card-comentarios">
+            <h4>Maria da Silva</h4>
+            <p class="comentario">Que hamburguer incrível! To anciosa pra comer de novo!</p>
+        </div>
+    </section>
+</body>
+</html>

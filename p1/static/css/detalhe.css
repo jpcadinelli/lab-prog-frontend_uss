@@ -1,0 +1,55 @@
+.voltar {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+
+}
+
+.lanche {
+    width: 100vw;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem;
+}
+
+.lanche img {
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .35);
+    width: 70%;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ingredientes {
+    margin-top: 1rem;
+}
+
+.ingredientes ul {
+    padding: 1rem;
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.card-comentarios {
+    max-width: 1000px;
+    width: 80vw;
+    padding: 1rem;
+    background-color: saddlebrown;
+    border-radius: 8px;
+}

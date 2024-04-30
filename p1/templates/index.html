@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cantina Universitária</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Cantina Universitária</h1>
+    </header>
+    <h2>Conheça nossos Lanches</h2>
+    <section class="cardapio">
+        {% for produto in cardapio %}
+            <div class="card-lanche">
+                <div class="info">
+                    <h3>{{ produto.nome }}</h3>
+                    <a href="{{url_for('produto', id=produto.id)}}">Detalhes</a>
+                </div>
+                <img src="{{url_for('static', filename=produto.imagem)}}" alt="Foto do {{produto.nome}} da Cantina Universitária">
+            </div>
+        {% endfor %}
+    </section>
+</body>
+</html>
