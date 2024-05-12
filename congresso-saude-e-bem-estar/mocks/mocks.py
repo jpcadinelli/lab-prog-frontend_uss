@@ -1,5 +1,5 @@
-from ..models.palestra import Palestra
-from ..models.palestrantes import Palestrante
+from ..classes.palestra import Palestra
+from ..classes.palestrantes import Palestrante
 
 # Criando das Palestras
 palestra1 = Palestra(
@@ -12,6 +12,10 @@ palestra1 = Palestra(
     'qualidade-de-vida-e-bem-estar.png'
 )
 
+palestras = [
+    palestra1
+]
+
 # Criando dos Palestrantes
 palestrante1 = Palestrante(
     '372eba98-5b14-489a-9607-f54f3842e476',
@@ -19,3 +23,7 @@ palestrante1 = Palestrante(
     'O Dr. Drauzio Varella é um renomado médico brasileiro, conhecido não apenas por sua atuação na medicina, mas também por seu trabalho como escritor, cientista e comunicador. Nascido em São Paulo em 1943, Drauzio graduou-se em Medicina pela Universidade de São Paulo (USP) em 1970, especializando-se em oncologia.\nSua trajetória profissional é marcada por uma notável dedicação à saúde pública e à divulgação científica. Drauzio Varella tornou-se amplamente conhecido por seu trabalho em prol da conscientização sobre doenças como HIV/AIDS, hepatite C e câncer, além de temas relacionados à saúde da população carcerária, área em que desenvolveu projetos pioneiros.\nAlém de sua atuação como médico e pesquisador, Drauzio é um prolífico autor, tendo escrito diversos livros que abordam temas médicos e sociais de forma acessível e informativa. Entre suas obras mais famosas estão "Estação Carandiru", que narra suas experiências como médico voluntário no extinto Complexo Penitenciário do Carandiru, em São Paulo, e "Por um Fio", que trata de questões relacionadas à medicina e à vida humana.\nDrauzio Varella também é reconhecido por seu trabalho na mídia, tendo apresentado programas de televisão e colaborado com diversos veículos de comunicação para disseminar informações relevantes sobre saúde e qualidade de vida.\nSua habilidade em comunicar informações complexas de forma clara e acessível o tornou uma figura muito respeitada e querida pelo público brasileiro. Drauzio Varella é um exemplo de como a medicina pode transcender os consultórios e hospitais, alcançando um papel fundamental na educação e na promoção da saúde pública.',
     'dr-drauzio-varella.png'
 )
+
+palestrantes = [
+    palestrante1
+]
