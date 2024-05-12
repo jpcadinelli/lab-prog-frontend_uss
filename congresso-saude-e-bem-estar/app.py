@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from mocks.mocks import palestras, palestrantes
+from mocks import palestras, palestrantes
 
 app = Flask(__name__)
 
