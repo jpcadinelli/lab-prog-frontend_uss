@@ -12,8 +12,30 @@ palestra1 = Palestra(
     'img/qualidade-de-vida-e-bem-estar.png'
 )
 
+palestra2 = Palestra(
+    'f7cdb31f-0203-40ed-8d95-e4c4743427ea',
+    'O resgate da saúde mental.',
+    '"O Resgate da Saúde Mental" é uma palestra envolvente e esclarecedora que une duas mentes brilhantes: o renomado médico e escritor Dráuzio Varella e o psicanalista Eduardo Moreira. Juntos, eles mergulham em um tema crucial e cada vez mais relevante na sociedade contemporânea: a saúde mental.\nDráuzio Varella, reconhecido por sua vasta experiência na medicina e comunicação, traz uma perspectiva clínica embasada em anos de prática e pesquisa. Com sua habilidade singular de comunicar conceitos médicos de forma acessível, ele aborda questões como os desafios enfrentados pelas pessoas em relação à saúde mental, os estigmas associados a doenças psicológicas e os avanços no tratamento e prevenção.\nEduardo Moreira, por sua vez, traz uma abordagem psicológica e filosófica, enriquecendo o debate com reflexões sobre a natureza humana, as pressões sociais e as formas de lidar com as adversidades emocionais. Sua expertise em psicanálise e sua visão crítica da sociedade contemporânea adicionam camadas profundas à discussão, convidando os espectadores a uma jornada introspectiva.\nJuntos, Varella e Moreira oferecem uma palestra envolvente e inspiradora, repleta de insights, dicas práticas e reflexões profundas sobre como promover o bem-estar mental em um mundo cada vez mais desafiador. Ao destacarem a importância do autocuidado, do apoio social e do acesso a tratamentos adequados, eles não apenas informam, mas também inspiram o público a buscar uma vida mais equilibrada e saudável, tanto física quanto emocionalmente.',
+    30,
+    'Maio',
+    ['372eba98-5b14-489a-9607-f54f3842e476', '4c7e043f-7967-4dc7-b48f-bcee2bd0c8be'],
+    'img/o-resgate-da-saude-mental.png'
+)
+
+palestra3 = Palestra(
+    '6f16af79-af05-422c-beb0-752c27d09577',
+    'Equilíbrio entre mente, corpo e espírito: estratégias para uma vida saudável',
+    'A palestra "Equilíbrio entre mente, corpo e espírito: estratégias para uma vida saudável", apresentada pelo Augusto Cury, seria uma jornada fascinante rumo ao autoconhecimento e à busca por uma vida plena. Com sua expertise em psicologia e suas habilidades como escritor e palestrante renomado, Cury guiará o público em uma reflexão profunda sobre a importância do equilíbrio entre mente, corpo e espírito para alcançar o tão almejado bem-estar.\nAugusto Cury conduzirá os participantes por um mergulho nas complexidades da mente humana, revelando estratégias práticas para lidar com o estresse, a ansiedade e outros desafios emocionais que afetam nossa saúde mental. Ele demonstrará como pequenas mudanças de hábitos podem ter um impacto significativo em nossa qualidade de vida, promovendo a resiliência e o equilíbrio emocional.\nAlém disso, Cury explorará a importância da conexão entre o corpo e a mente, destacando a influência dos nossos pensamentos e emoções na saúde física. Ele compartilhará insights sobre a importância de uma alimentação balanceada, da prática regular de exercícios físicos e do sono de qualidade para manter o corpo saudável e fortalecer a mente.\nPor fim, Augusto Cury abordará a dimensão espiritual do bem-estar, convidando os participantes a refletir sobre seus valores, propósitos e crenças, e como isso impacta sua saúde e felicidade. Ele oferecerá ferramentas para cultivar a espiritualidade de forma positiva e construtiva, promovendo um sentido de conexão consigo mesmo e com o universo ao nosso redor.\nEm suma, a palestra de Augusto Cury será uma experiência enriquecedora e inspiradora, repleta de insights profundos e práticos para ajudar os participantes a alcançarem um equilíbrio verdadeiro entre mente, corpo e espírito, e assim, viverem uma vida plena e saudável.',
+    10,
+    'Junho',
+    ['3adb4226-cc2d-4f64-a2ec-3e78ce5b227e'],
+    'img/equilibrio-entre-mente-corpo-e-espirito.png'
+)
+
 palestras = [
-    palestra1
+    palestra1,
+    palestra2,
+    palestra3
 ]
 
 # Criando dos Palestrantes
@@ -24,6 +46,22 @@ palestrante1 = Palestrante(
     'img/dr-drauzio-varella.png'
 )
 
+palestrante2 = Palestrante(
+    '4c7e043f-7967-4dc7-b48f-bcee2bd0c8be',
+    'Eduardo Moreira',
+    'Eduardo Moreira é um empresário, investidor e escritor brasileiro conhecido por sua trajetória multifacetada e sua visão crítica sobre economia, política e sociedade. Com uma carreira que abrange desde o mundo corporativo até a esfera acadêmica, ele se destaca como um pensador incisivo e provocador.\nMoreira é reconhecido por sua atuação no mercado financeiro, onde acumulou experiência como trader e gestor de investimentos. Sua abordagem inovadora e sua capacidade de identificar oportunidades em meio à volatilidade do mercado o destacaram como uma figura influente no cenário econômico brasileiro.\nAlém de suas atividades empresariais, Eduardo Moreira é um prolífico autor e palestrante, compartilhando suas ideias e insights em livros, artigos e eventos ao redor do mundo. Sua escrita é caracterizada por uma análise profunda e uma linguagem acessível, abordando temas complexos de forma clara e envolvente.\nMoreira também é conhecido por sua atuação como ativista social, defendendo causas como a igualdade de gênero, os direitos humanos e a sustentabilidade ambiental. Sua voz crítica e comprometida ressoa não apenas nos círculos empresariais, mas também na esfera pública, onde ele busca promover mudanças positivas e construtivas.\nEm suma, Eduardo Moreira é uma figura multifacetada e inspiradora, cujo trabalho transcende os limites do mundo dos negócios, impactando não apenas o cenário econômico, mas também a sociedade como um todo. Sua abordagem visionária e seu compromisso com a justiça social o tornam uma voz relevante e influente em um mundo em constante transformação.',
+    'img/eduardo-moreira.png'
+)
+
+palestrante3 = Palestrante(
+    '3adb4226-cc2d-4f64-a2ec-3e78ce5b227e',
+    'Augusto Cury',
+    'Augusto Cury é um renomado psiquiatra, psicoterapeuta, cientista e escritor brasileiro, reconhecido internacionalmente por suas contribuições no campo da psicologia e do desenvolvimento humano. Nascido em 2 de outubro de 1958, em Colina, interior de São Paulo, Cury construiu uma carreira multifacetada e inspiradora.\nSua jornada profissional é marcada por uma busca incessante pelo entendimento da mente humana e pelo desenvolvimento de estratégias para promover a saúde mental e emocional. Cury é autor de dezenas de livros, muitos dos quais se tornaram best-sellers não apenas no Brasil, mas em diversos países ao redor do mundo. Suas obras abordam temas como inteligência emocional, ansiedade, estresse, educação e qualidade de vida, apresentando insights profundos e soluções práticas para os desafios da vida moderna.\nAlém de sua atuação como escritor, Augusto Cury é um palestrante carismático e cativante, conhecido por suas apresentações dinâmicas e inspiradoras. Suas palestras são verdadeiras jornadas de autoconhecimento, nas quais ele compartilha sua vasta experiência e conhecimento em psicologia, motivando e transformando a vida de milhares de pessoas ao redor do mundo.\nCury também é fundador da Academia de Inteligência, um programa educacional que visa desenvolver habilidades socioemocionais em crianças e adolescentes, preparando-os para enfrentar os desafios do mundo contemporâneo de forma mais equilibrada e resiliente.\nCom seu estilo único e sua visão humanista, Augusto Cury se destaca como uma figura inspiradora e influente no cenário nacional e internacional, deixando um legado significativo no campo da psicologia e do desenvolvimento pessoal. Sua missão de promover o bem-estar e a qualidade de vida continua a impactar positivamente a vida de inúmeras pessoas em todo o mundo.',
+    'img/augusto-cury.png'
+)
+
 palestrantes = [
-    palestrante1
+    palestrante1,
+    palestrante2,
+    palestrante3
 ]
