@@ -10,19 +10,28 @@
 <body>
     <main class="container">
         <h1>Congresso Saúde e Bem-Estar</h1>
-        <p>O projeto Congresso Saúde e Bem-Estar surge como uma inovadora plataforma digital destinada a simplificar a experiência dos participantes em eventos dedicados à saúde e bem-estar. Ao fornecer um catálogo digital abrangente, o projeto visa facilitar a navegação entre uma variedade de atividades, incluindo palestras, workshops e sessões interativas. Essa abordagem intuitiva e acessível promove uma participação mais significativa, permitindo que os usuários explorem e se envolvam com os conteúdos que mais lhes interessam, promovendo assim uma jornada de aprendizado e autocuidado mais fluida e personalizada.</p>
+        <div class="main-info">
+            <img src="{{url_for( 'static', filename='img/saude-e-bem-estar.png')}}" alt="Foto de uma mulher fazendo exercício ao ar livre." class="main-img">
+            <p>O projeto Congresso Saúde e Bem-Estar surge como uma inovadora plataforma digital destinada a simplificar a experiência dos participantes em eventos dedicados à saúde e bem-estar. Ao fornecer um catálogo digital abrangente, o projeto visa facilitar a navegação entre uma variedade de atividades, incluindo palestras, workshops e sessões interativas. Essa abordagem intuitiva e acessível promove uma participação mais significativa, permitindo que os usuários explorem e se envolvam com os conteúdos que mais lhes interessam, promovendo assim uma jornada de aprendizado e autocuidado mais fluida e personalizada.</p>
+        </div>
     </main>
     <section class="container sessao">
         <h2>Sessões</h2>
         <div class="cards">
             <div class="card">
+                <div class="data">
+                    <span class="dia">22</span>
+                    <span class="mes">Maio</span>
+                </div>
                 <img src="{{url_for('static', filename='img/palestra1.png')}}" alt="Foto da sessão." class="foto-sessao">
                 <h3 class="nome-sessao">Nome da Sessão</h3>
                 <div class="palestrantes">
-                    <h4 class="palestrante">Palestrantes</h4>
                     <a href=""><img src="{{url_for('static', filename='img/pablo-marcal.png')}}" alt="Foto do plaestrante" class="foto-palestrante"></a>
                 </div>
-                <a href="" class="btn-sessao">Detalhes</a>
+                <div class="card-botoes">
+                    <a href="" class="btn-sessao">Detalhes</a>
+                    <a href="" class="btn-palestrantes">Palestrantes</a>
+                </div>
             </div>
         </div>
     </section>
