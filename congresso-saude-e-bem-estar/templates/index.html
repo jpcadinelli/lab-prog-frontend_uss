@@ -18,10 +18,11 @@
     <section class="container sessao">
         <h2>Sessões</h2>
         <div class="cards">
+            {% for palestra in palestras %}
             <div class="card">
                 <div class="data">
-                    <span class="dia">22</span>
-                    <span class="mes">Maio</span>
+                    <span class="dia">{{ palestra.dia }}</span>
+                    <span class="mes">{{ palestra.mes }}</span>
                 </div>
                 <img src="{{url_for('static', filename='img/palestra1.png')}}" alt="Foto da sessão." class="foto-sessao">
                 <h3 class="nome-sessao">Nome da Sessão</h3>
