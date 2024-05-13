@@ -18,7 +18,7 @@ body {
     background: var(--cinza);
 }
 
-h1, h2 {
+h1, .h2 {
     background-color: var(--laranja);
     width: max-content;
     padding: .5rem 1rem;
