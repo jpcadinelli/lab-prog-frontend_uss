@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Saúde e Bem-Estar</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
 </head>
 <body>
@@ -19,27 +19,27 @@
         <h2>Sessões</h2>
         <div class="cards">
             {% for palestra in palestras %}
-            <div class="card">
-                <div class="data">
-                    <span class="dia">{{ palestra.dia }}</span>
-                    <span class="mes">{{ palestra.mes }}</span>
-                </div>
-                <img src="{{url_for('static', filename=palestra.foto)}}" alt="Foto da sessão." class="foto-sessao">
-                <h3 class="nome-sessao">{{ palestra.nome }}</h3>
-                <div class="palestrantes">
-                    {% for palestrante in palestrantes %}
-                        {% for i in palestra.palestrantes%}
-                            {% if i == palestrante.id %}
-                                <a href=""><img src="{{url_for('static', filename=palestrante.foto)}}" alt="Foto do plaestrante" class="foto-palestrante"></a>
-                            {% endif %}
+                <div class="card">
+                    <div class="data">
+                        <span class="dia">{{ palestra.dia }}</span>
+                        <span class="mes">{{ palestra.mes }}</span>
+                    </div>
+                    <img src="{{url_for('static', filename=palestra.foto)}}" alt="Foto da sessão." class="foto-sessao">
+                    <h3 class="nome-sessao">{{ palestra.nome }}</h3>
+                    <div class="palestrantes">
+                        {% for palestrante in palestrantes %}
+                            {% for i in palestra.palestrantes%}
+                                {% if i == palestrante.id %}
+                                    <a href=""><img src="{{url_for('static', filename=palestrante.foto)}}" alt="Foto do plaestrante" class="foto-palestrante"></a>
+                                {% endif %}
+                            {% endfor %}
                         {% endfor %}
-                    {% endfor %}
+                    </div>
+                    <div class="card-botoes">
+                        <a href="" class="btn-sessao">Detalhes</a>
+                        <a href="{{ url_for('ministrantes', id=palestra.id) }}" class="btn-palestrantes">Palestrantes</a>
+                    </div>
                 </div>
-                <div class="card-botoes">
-                    <a href="" class="btn-sessao">Detalhes</a>
-                    <a href="" class="btn-palestrantes">Palestrantes</a>
-                </div>
-            </div>
             {% endfor %}
         </div>
     </section>
