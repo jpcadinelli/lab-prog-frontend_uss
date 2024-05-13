@@ -30,7 +30,7 @@
                         {% for palestrante in palestrantes %}
                             {% for i in palestra.palestrantes%}
                                 {% if i == palestrante.id %}
-                                    <a href=""><img src="{{url_for('static', filename=palestrante.foto)}}" alt="Foto do plaestrante" class="foto-palestrante"></a>
+                                    <a href="{{ url_for('ministrante', id=palestrante.id) }}"><img src="{{url_for('static', filename=palestrante.foto)}}" alt="Foto do plaestrante" class="foto-palestrante"></a>
                                 {% endif %}
                             {% endfor %}
                         {% endfor %}
