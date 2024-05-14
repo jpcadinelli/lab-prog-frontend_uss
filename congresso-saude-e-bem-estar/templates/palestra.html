@@ -39,5 +39,19 @@
             {% endfor %}
         </div>
     </main>
+    <section class="container comentarios">
+        <div class="comente-aqui">
+            <input placeholder="Comente aqui!">
+            <button>Comentar</button>
+        </div>
+        {% for comentario in comentarios %}
+            {% if comentario.idPalestra == palestra.id %}
+                <div class="comentario">
+                    <span class="nome-comentario">{{ comentario.nome }}:</span>
+                    <span class="comentario-comentario">{{ comentario.comentario }}</span>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
 </body>
 </html>
