@@ -36,7 +36,7 @@
                         {% endfor %}
                     </div>
                     <div class="card-botoes">
-                        <a href="" class="btn-sessao">Detalhes</a>
+                        <a href="{{ url_for('apresentacao', id=palestra.id) }}" class="btn-sessao">Detalhes</a>
                         <a href="{{ url_for('ministrantes', id=palestra.id) }}" class="btn-palestrantes">Palestrantes</a>
                     </div>
                 </div>
