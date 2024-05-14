@@ -15,7 +15,8 @@ palestra1 = Palestra(
     22,
     'Maio',
     [1],
-    'img/qualidade-de-vida-e-bem-estar.png'
+    'img/qualidade-de-vida-e-bem-estar.png',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472693.95083578053!2d-44.02402927596853!3d-22.243057371872034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99311c850808bf%3A0xc2a1c73968947a77!2sCentro%20de%20Conven%C3%A7%C3%B5es%20General%20Sombra!5e0!3m2!1spt-BR!2sbr!4v1715646658642!5m2!1spt-BR!2sbr'
 )
 
 palestra2 = Palestra(
@@ -33,7 +34,8 @@ palestra2 = Palestra(
     30,
     'Maio',
     [1, 2],
-    'img/o-resgate-da-saude-mental.png'
+    'img/o-resgate-da-saude-mental.png',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29399.869197845037!2d-43.264379018245386!3d-22.913973905951586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5bfcef45a7%3A0x3c044ac8f75ca717!2sMaracan%C3%A3%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1715646930860!5m2!1spt-BR!2sbr'
 )
 
 palestra3 = Palestra(
@@ -53,7 +55,8 @@ palestra3 = Palestra(
     10,
     'Junho',
     [3],
-    'img/equilibrio-entre-mente-corpo-e-espirito.png'
+    'img/equilibrio-entre-mente-corpo-e-espirito.png',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.6293428985855!2d-43.21893972512714!3d-22.96387393991292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd59c39c03753%3A0xec042ea8f6b96518!2sTaj%20Mahal%20Restaurante!5e0!3m2!1spt-BR!2sbr!4v1715647503342!5m2!1spt-BR!2sbr'
 )
 
 palestras = [
