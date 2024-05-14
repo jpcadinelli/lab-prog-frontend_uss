@@ -1,7 +1,8 @@
 from palestra import Palestra
 from palestrante import Palestrante
+from comentario import Comentario
 
-# Criando das Palestras
+# Criando as Palestras
 palestra1 = Palestra(
     1,
     'Qualidade de vida e bem-estar.',
@@ -65,7 +66,7 @@ palestras = [
     palestra3
 ]
 
-# Criando dos Palestrantes
+# Criando os Palestrantes
 palestrante1 = Palestrante(
     1,
     'Dr. Drauzio Varella',
@@ -121,4 +122,32 @@ palestrantes = [
     palestrante1,
     palestrante2,
     palestrante3
+]
+
+# Criando os comentários
+comentario1 = Comentario(
+    1,
+    'João Pedro',
+    'Estou muito ansioso.',
+    1
+)
+
+comentario2 = Comentario(
+    2,
+    'João Pedro',
+    'Já comprei ingresso.',
+    2
+)
+
+comentario3 = Comentario(
+    3,
+    'João Pedro',
+    'Falam que a comida do lugar q vai ser esta palestra é muito boa.',
+    3
+)
+
+comentarios = [
+    comentario1,
+    comentario2,
+    comentario3
 ]
