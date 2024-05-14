@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from mocks import palestras, palestrantes
+from mocks import palestras, palestrantes, comentarios
 
 app = Flask(__name__)
 
@@ -25,5 +25,5 @@ def ministrante(id:int):
 def apresentacao(id:int):
     for palestra in palestras:
         if palestra.id == id:
-            return render_template("palestra.html", palestra=palestra, palestrantes=palestrantes)
+            return render_template("palestra.html", palestra=palestra, palestrantes=palestrantes, comentarios=comentarios)
     return "<h1>404 Page Not Found.</h1>"
