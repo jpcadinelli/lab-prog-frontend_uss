@@ -20,3 +20,10 @@ def ministrante(id:int):
         if palestrante.id == id:
             return render_template("palestrante.html", palestrante=palestrante)
     return "<h1>404 Page Not Found.</h1>"
+
+@app.route("/apresentacao/<int:id>")
+def apresentacao(id:int):
+    for palestra in palestras:
+        if palestra.id == id:
+            return render_template("palestra.html", palestra=palestra, palestrantes=palestrantes)
+    return "<h1>404 Page Not Found.</h1>"
