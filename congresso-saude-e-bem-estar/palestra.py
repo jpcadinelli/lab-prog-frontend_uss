@@ -1,5 +1,5 @@
 class Palestra:
-    def __init__(self, id, nome, descricao, dia, mes, palestrantes, foto):
+    def __init__(self, id, nome, descricao, dia, mes, palestrantes, foto, mapa):
         self.id = id
         self.nome = nome
         self.descricao = descricao
@@ -7,3 +7,4 @@ class Palestra:
         self.mes = mes
         self.palestrantes = palestrantes
         self.foto = foto
+        self.mapa = mapa
