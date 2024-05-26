@@ -65,7 +65,7 @@ body {
 
 .container {
     width: 1200px;
-    margin: 0 auto 0 auto;
+    margin: 1rem auto 1rem auto;
 }
 
 .main-titulo {
@@ -139,6 +139,18 @@ body {
     font-weight: bold;
 }
 
+/* evento.html */
+.evento-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.evento-img {
+    width: 50%;
+    margin: 1rem 0 1rem 25%;
+}
+
+/* erro.html */
 .mensagem-erro {
     width: fit-content;
     margin: 2rem auto 0;
