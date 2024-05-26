@@ -11,6 +11,13 @@ def index():
 def eventos():
     return render_template('eventos.html', eventosMocks=eventosMocks)
 
+@app.route('/evento/<int:id>')
+def evento(id:int):
+    for eventoMocks in eventosMocks:
+        if id == eventoMocks.id:
+            return render_template('evento.html', eventoMocks=eventoMocks)
+    return render_template('erro.html', mensagem='404 Evento não encontrado.')
+
 @app.route('/instalacoes')
 def instalacoes():
     return render_template('instalacoes.html')

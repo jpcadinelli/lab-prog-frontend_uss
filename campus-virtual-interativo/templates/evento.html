@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UVASS - Eventos</title>
+    <title>UVASS - {{eventoMocks.nome}}</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="shortcut icon" href="{{url_for('static', filename='img/logo-univassouras-quadrado.png')}}" type="image/x-icon">
 </head>
@@ -14,6 +14,7 @@
         <nav class="nav-header">
             <ul class="nav-header-list">
                 <li><a href="{{url_for('index')}}">Início</a></li>
+                <li><a href="{{url_for('eventos')}}">Eventos Acadêmicos</a></li>
                 <li><a href="{{url_for('instalacoes')}}">Instalações do Campus</a></li>
                 <li><a href="{{url_for('clubes')}}">Clubes e Organizações Estudantis</a></li>
                 <li><a href="{{url_for('servicos')}}">Serviços no Campus</a></li>
@@ -26,22 +27,20 @@
         <p class="main-descricao">Descubra um mundo de conhecimento e oportunidades nos eventos imperdíveis oferecidos pela Universidade de Vassouras ao longo do ano! Seja você um aficionado por ciência, um entusiasta das artes ou um profissional em busca de atualização, nossos eventos são projetados para enriquecer sua jornada acadêmica e profissional. Com palestras inspiradoras, workshops práticos e debates estimulantes, mergulhe em experiências que ampliarão seus horizontes e conectarão você com líderes e mentes brilhantes em diversas áreas. Junte-se a nós e deixe-se envolver pela excelência acadêmica e pela atmosfera vibrante da comunidade universitária de Vassouras!</p>
     </main>
     <section class="container cards-container">
-        {% for evento in eventosMocks: %}
-            <div class="card">
-                <div class="card-data">
-                    <span class="card-dia">{{evento.dia}}</span>
-                    <span class="card-mes">{{evento.mes}}</span>
-                </div>
-                <img src="{{url_for('static', filename=evento.imagem)}}" alt="Imagem do evento" class="card-img">
-                <div class="card-info">
-                    <div class="card-div-nome">
-                        <span class="card-nome">{{evento.nome}}</span>
-                    </div>
-                    <span class="card-palestrante">{{evento.palestrante}}</span>
-                    <a href="{{url_for('evento', id=evento.id)}}" class="btn-detalhes">Detalhes</a>
-                </div>
+        <div class="card">
+            <div class="card-data">
+                <span class="card-dia">{{eventoMocks.dia}}</span>
+                <span class="card-mes">{{eventoMocks.mes}}</span>
             </div>
-        {% endfor %}
+            <img src="{{url_for('static', filename=eventoMocks.imagem)}}" alt="Imagem do evento" class="card-img">
+            <div class="card-info">
+                <div class="card-div-nome">
+                    <span class="card-nome">{{eventoMocks.nome}}</span>
+                </div>
+                <span class="card-palestrante">{{eventoMocks.palestrante}}</span>
+                <a href="" class="btn-detalhes">Detalhes</a>
+            </div>
+        </div>
     </section>
 </body>
 </html>
