@@ -17,3 +17,7 @@ def instalacoes():
 @app.route('/clubes')
 def clubes():
     return render_template('clubes.html')
+
+@app.route('/servicos')
+def servicos():
+    return render_template('servicos.html')
