@@ -21,6 +21,27 @@
             </ul>
         </nav>
     </header>
-    <h1>Eventos Acadêmicos</h1>
+    <main class="container">
+        <h1 class="main-titulo">Eventos Acadêmicos</h1>
+        <p class="main-descricao">Descubra um mundo de conhecimento e oportunidades nos eventos imperdíveis oferecidos pela Universidade de Vassouras ao longo do ano! Seja você um aficionado por ciência, um entusiasta das artes ou um profissional em busca de atualização, nossos eventos são projetados para enriquecer sua jornada acadêmica e profissional. Com palestras inspiradoras, workshops práticos e debates estimulantes, mergulhe em experiências que ampliarão seus horizontes e conectarão você com líderes e mentes brilhantes em diversas áreas. Junte-se a nós e deixe-se envolver pela excelência acadêmica e pela atmosfera vibrante da comunidade universitária de Vassouras!</p>
+    </main>
+    <section class="container cards-container">
+        {% for evento in eventosMocks: %}
+            <div class="card">
+                <div class="card-data">
+                    <span class="card-dia">{{evento.dia}}</span>
+                    <span class="card-mes">{{evento.mes}}</span>
+                </div>
+                <img src="{{url_for('static', filename=evento.imagem)}}" alt="Imagem do evento" class="card-img">
+                <div class="card-info">
+                    <div class="card-div-nome">
+                        <span class="card-nome">{{evento.nome}}</span>
+                    </div>
+                    <span class="card-palestrante">{{evento.palestrante}}</span>
+                    <a href="" class="btn-detalhes">Detalhes</a>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
 </body>
 </html>

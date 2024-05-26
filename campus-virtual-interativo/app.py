@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from mocks import eventosMocks
 
 app = Flask(__name__)
 
@@ -8,7 +9,7 @@ def index():
 
 @app.route('/eventos')
 def eventos():
-    return render_template('eventos.html')
+    return render_template('eventos.html', eventosMocks=eventosMocks)
 
 @app.route('/instalacoes')
 def instalacoes():
