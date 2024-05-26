@@ -13,3 +13,7 @@ def eventos():
 @app.route('/instalacoes')
 def instalacoes():
     return render_template('instalacoes.html')
+
+@app.route('/clubes')
+def clubes():
+    return render_template('clubes.html')
