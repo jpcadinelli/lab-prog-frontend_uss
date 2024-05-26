@@ -1,7 +1,8 @@
 class Evento:
-    def __init__(self, id, nome, palestrante, local, urlMapa, imagem, dia, mes):
+    def __init__(self, id, nome, descricao, palestrante, local, urlMapa, imagem, dia, mes):
         self.id = id
         self.nome = nome
+        self.descricao = descricao
         self.palestrante = palestrante
         self.local = local
         self.urlMapa = urlMapa
