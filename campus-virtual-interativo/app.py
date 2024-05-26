@@ -21,3 +21,7 @@ def clubes():
 @app.route('/servicos')
 def servicos():
     return render_template('servicos.html')
+
+@app.route('/acesso')
+def acesso():
+    return render_template('acesso.html')
