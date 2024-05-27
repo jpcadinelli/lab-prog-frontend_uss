@@ -1,11 +1,19 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from mocks import eventosMocks, instalacoesMocks, clubesMocks, servicosMocks, transportesMocks
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html', eventosMocks=eventosMocks, instalacoesMocks=instalacoesMocks, clubesMocks=clubesMocks, servicosMocks=servicosMocks, transportesMocks=transportesMocks)
+    if request.method == 'POST':
+        search_query = request.form['search']
+        filtered_eventos = [evento for evento in eventosMocks if search_query.lower() in evento.nome.lower() or search_query.lower() in evento.descricao.lower()]
+        filtered_instalacoes = [instalacao for instalacao in instalacoesMocks if search_query.lower() in instalacao.nome.lower() or search_query.lower() in instalacao.descricao.lower()]
+        filtered_clubes = [clube for clube in clubesMocks if search_query.lower() in clube.nome.lower() or search_query.lower() in clube.descricao.lower()]
+        filtered_servicos = [servico for servico in servicosMocks if search_query.lower() in servico.nome.lower() or search_query.lower() in servico.descricao.lower()]
+        filtered_transportes = [transporte for transporte in transportesMocks if search_query.lower() in transporte.tipo.lower() or search_query.lower() in transporte.descricao.lower()]
+        return render_template('index.html', eventosMocks=filtered_eventos, instalacoesMocks=filtered_instalacoes, clubesMocks=filtered_clubes, servicosMocks=filtered_servicos, transportesMocks=filtered_transportes, search_query=search_query)
+    return render_template('index.html', eventosMocks=eventosMocks, instalacoesMocks=instalacoesMocks, clubesMocks=clubesMocks, servicosMocks=servicosMocks, transportesMocks=transportesMocks, search_query='')
 
 @app.route('/eventos')
 def eventos():
