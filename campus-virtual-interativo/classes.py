@@ -9,3 +9,15 @@ class Evento:
         self.imagem = imagem
         self.dia = dia
         self.mes = mes
+
+class Instalacao:
+    def __init__(self, id, nome, descricao, local, urlMapa, imagem, horarioFuncionamento, disponibilidade, contato):
+        self.id = id
+        self.nome = nome
+        self.descricao = descricao
+        self.local = local
+        self.urlMapa = urlMapa
+        self.imagem = imagem
+        self.horarioFuncionamento = horarioFuncionamento
+        self.disponibilidade = disponibilidade
+        self.contato = contato

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UVASS - Instalações</title>
+    <title>UVASS - {{instalacaoMocks.nome}}</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="shortcut icon" href="{{url_for('static', filename='img/logo-univassouras-quadrado.png')}}" type="image/x-icon">
 </head>
@@ -15,6 +15,7 @@
             <ul class="nav-header-list">
                 <li><a href="{{url_for('index')}}">Início</a></li>
                 <li><a href="{{url_for('eventos')}}">Eventos Acadêmicos</a></li>
+                <li><a href="{{url_for('instalacoes')}}">Instalações do Campus</a></li>
                 <li><a href="{{url_for('clubes')}}">Clubes e Organizações Estudantis</a></li>
                 <li><a href="{{url_for('servicos')}}">Serviços no Campus</a></li>
                 <li><a href="{{url_for('acesso')}}">Transporte e Acesso</a></li>
@@ -22,22 +23,19 @@
         </nav>
     </header>
     <main class="container">
-        <h1 class="main-titulo">Instalações do Campus</h1>
-        <p class="main-descricao">Explore as diversas instalações do campus da Universidade de Vassouras. Conheça nossas bibliotecas, laboratórios, salas de aula e áreas de lazer, e aproveite ao máximo tudo o que oferecemos para enriquecer sua experiência acadêmica.</p>
+        <h1 class="main-titulo">{{ instalacaoMocks.nome }}</h1>
+        <div class="evento-data">
+            <span class="evento-dia">Horário de funcionamento:</span>
+            <span class="evento-mes">{{ instalacaoMocks.horarioFuncionamento }}</span>
+            <span>|</span>
+            <span>{{instalacaoMocks.disponibilidade}} espaços disponíveis.</span>
+        </div>
+        <img src="{{url_for('static', filename=instalacaoMocks.imagem)}}" alt="Imagem da instalação" class="evento-img">
+        <p class="main-descricao">{{instalacaoMocks.descricao}}</p>
     </main>
-    <section class="container cards-container">
-        {% for instalacao in instalacoesMocks %}
-            <div class="card">
-                <img src="{{ url_for('static', filename=instalacao.imagem) }}" alt="Imagem da instalação" class="card-img">
-                <div class="card-info">
-                    <div class="card-div-nome">
-                        <span class="card-nome">{{ instalacao.nome }}</span>
-                    </div>
-                    <span class="card-descricao card-descricao-instalacao">{{ instalacao.descricao }}</span>
-                    <a href="{{url_for('instalacao', id=instalacao.id)}}" class="btn-detalhes">Detalhes</a>
-                </div>
-            </div>
-        {% endfor %}
+    <section class="container evento-local">
+        <h2>Local da instalação: {{instalacaoMocks.local}}</h2>
+        <iframe src={{instalacaoMocks.urlMapa}} width="50%" height="450" style="border:0; margin-left: 25%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 </body>
 </html>

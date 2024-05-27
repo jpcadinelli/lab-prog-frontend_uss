@@ -150,6 +150,11 @@ body {
     margin: 1rem 0 1rem 25%;
 }
 
+/* instalacao.html */
+.card-descricao-instalacao {
+    height: 100px;
+}
+
 /* erro.html */
 .mensagem-erro {
     width: fit-content;
