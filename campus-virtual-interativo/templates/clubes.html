@@ -21,6 +21,23 @@
             </ul>
         </nav>
     </header>
-    <h1>Clubes e Organizações Estudantis</h1>
+    <main class="container">
+        <h1 class="main-titulo">Clubes e Organizações Estudantis</h1>
+        <p class="main-descricao">Descubra os diferentes clubes e organizações estudantis da Universidade de Vassouras. Promovemos a interação comunitária através de diversas atividades e eventos.</p>
+    </main>
+    <section class="container cards-container">
+        {% for clube in clubesMocks %}
+            <div class="card">
+                <img src="{{ url_for('static', filename=clube.imagem) }}" alt="Imagem do clube" class="card-img">
+                <div class="card-info">
+                    <div class="card-div-nome">
+                        <span class="card-nome">{{ clube.nome }}</span>
+                    </div>
+                    <span class="card-descricao card-descricao-instalacao">{{ clube.descricao }}</span>
+                    <a href="{{url_for('clube', id=clube.id)}}" class="btn-detalhes">Detalhes</a>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
 </body>
 </html>

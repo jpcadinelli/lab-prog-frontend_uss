@@ -21,3 +21,13 @@ class Instalacao:
         self.horarioFuncionamento = horarioFuncionamento
         self.disponibilidade = disponibilidade
         self.contato = contato
+
+class Clube:
+    def __init__(self, id, nome, descricao, eventos, noticias, imagem, contato):
+        self.id = id
+        self.nome = nome
+        self.descricao = descricao
+        self.eventos = eventos
+        self.noticias = noticias
+        self.imagem = imagem
+        self.contato = contato

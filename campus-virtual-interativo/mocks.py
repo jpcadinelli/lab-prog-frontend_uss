@@ -77,3 +77,36 @@ instalacao3 = Instalacao(
 )
 
 instalacoesMocks = [instalacao1, instalacao2, instalacao3]
+
+# Setando os mocks dos clubes
+clube1 = Clube(
+    1,
+    'Clube de Robótica',
+    'O Clube de Robótica é dedicado ao desenvolvimento de projetos de robótica, promovendo a integração de conhecimentos em mecânica, eletrônica e programação.',
+    ['Competição de Robôs - 12/06', 'Workshop de Arduino - 25/07'],
+    ['Equipe do Clube de Robótica vence competição regional', 'Novo laboratório de robótica é inaugurado'],
+    'img/clube-robotica.png',
+    '(24) 2471-8301'
+)
+
+clube2 = Clube(
+    2,
+    'Clube de Literatura',
+    'O Clube de Literatura promove a leitura e discussão de obras literárias, encontros com autores e atividades culturais.',
+    ['Sessão de Poesia - 15/06', 'Encontro com Autores - 30/07'],
+    ['Lançamento do novo livro da autora Maria Silva', 'Clube de Literatura organiza maratona de leitura'],
+    'img/clube-literatura.png',
+    '(24) 2471-8302'
+)
+
+clube3 = Clube(
+    3,
+    'Clube de Esportes',
+    'O Clube de Esportes incentiva a prática de diversas modalidades esportivas, como futebol, basquete e vôlei, além de organizar campeonatos internos.',
+    ['Torneio de Futebol - 20/06', 'Campeonato de Vôlei - 10/08'],
+    ['Clube de Esportes conquista troféu interuniversitário', 'Novo treinador para a equipe de basquete'],
+    'img/clube-esportes.png',
+    '(24) 2471-8303'
+)
+
+clubesMocks = [clube1, clube2, clube3]

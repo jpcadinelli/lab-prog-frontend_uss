@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UVASS - {{clubeMocks.nome}}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/logo-univassouras-quadrado.png')}}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/logo-univassouras.png') }}" alt="Logo da Universidade de Vassouras">
+        <nav class="nav-header">
+            <ul class="nav-header-list">
+                <li><a href="{{url_for('index')}}">Início</a></li>
+                <li><a href="{{url_for('eventos')}}">Eventos Acadêmicos</a></li>
+                <li><a href="{{url_for('instalacoes')}}">Instalações do Campus</a></li>
+                <li><a href="{{url_for('clubes')}}">Clubes e Organizações Estudantis</a></li>
+                <li><a href="{{url_for('servicos')}}">Serviços no Campus</a></li>
+                <li><a href="{{url_for('acesso')}}">Transporte e Acesso</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="main-titulo">{{clubeMocks.nome}}</h1>
+        <div class="evento-data">
+            <span class="evento-dia">Contato:</span>
+            <span class="evento-mes">{{clubeMocks.contato}}</span>
+        </div>
+        <img src="{{url_for('static', filename=clubeMocks.imagem)}}" alt="Imagem do clube" class="evento-img">
+        <p class="main-descricao">{{clubeMocks.descricao}}</p>
+    </main>
+    <section class="container evento-local">
+        <h2>Próximos eventos</h2>
+        <ul>
+            {% for evento in clubeMocks.eventos %}
+                <li>{{evento}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="container evento-local">
+        <h2>Notícias recentes</h2>
+        <ul>
+            {% for noticia in clubeMocks.noticias %}
+                <li>{{noticia}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="container evento-local">
+        <h2>Formulário de Adesão</h2>
+        <form method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
