@@ -31,3 +31,13 @@ class Clube:
         self.noticias = noticias
         self.imagem = imagem
         self.contato = contato
+
+class Servico:
+    def __init__(self, id, nome, descricao, localizacao, horarios, menu=None, procedimentos=None):
+        self.id = id
+        self.nome = nome
+        self.descricao = descricao
+        self.localizacao = localizacao
+        self.horarios = horarios
+        self.menu = menu
+        self.procedimentos = procedimentos

@@ -110,3 +110,33 @@ clube3 = Clube(
 )
 
 clubesMocks = [clube1, clube2, clube3]
+
+# Setando os mocks dos serviços
+servico1 = Servico(
+    1,
+    'Restaurante Universitário',
+    'Oferece refeições balanceadas para os alunos e funcionários.',
+    'Próximo ao prédio principal',
+    'Segunda a Sexta, das 11h às 14h',
+    menu=['Arroz, feijão, carne, salada', 'Prato vegetariano', 'Sobremesas variadas']
+)
+
+servico2 = Servico(
+    2,
+    'Centro de Saúde',
+    'Atendimento médico e psicológico para alunos e funcionários.',
+    'Prédio de Ciências da Saúde, sala 101',
+    'Segunda a Sexta, das 8h às 17h',
+    procedimentos=['Consulta médica', 'Atendimento psicológico', 'Vacinação', 'Orientações de saúde']
+)
+
+servico3 = Servico(
+    3,
+    'Segurança no Campus',
+    'Equipe de segurança disponível 24 horas para garantir a segurança de todos.',
+    'Posto de segurança em todos os prédios',
+    '24 horas',
+    procedimentos=['Vigilância 24 horas', 'Patrulhamento regular', 'Atendimento a emergências', 'Monitoramento por câmeras']
+)
+
+servicosMocks = [servico1, servico2, servico3]

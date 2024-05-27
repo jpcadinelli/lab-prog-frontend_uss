@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from mocks import eventosMocks, instalacoesMocks, clubesMocks
+from mocks import eventosMocks, instalacoesMocks, clubesMocks, servicosMocks
 
 app = Flask(__name__)
 
@@ -42,7 +42,14 @@ def clube(id:int):
 
 @app.route('/servicos')
 def servicos():
-    return render_template('servicos.html')
+    return render_template('servicos.html', servicosMocks=servicosMocks)
+
+@app.route('/servico/<int:id>')
+def servico(id:int):
+    for servicoMocks in servicosMocks:
+        if id == servicoMocks.id:
+            return render_template('servico.html', servicoMocks=servicoMocks)
+    return render_template('erro.html', mensagem='404 Serviço não encontrado.')
 
 @app.route('/acesso')
 def acesso():
