@@ -41,3 +41,14 @@ class Servico:
         self.horarios = horarios
         self.menu = menu
         self.procedimentos = procedimentos
+
+class Transporte:
+    def __init__(self, id, tipo, descricao, local, horario, detalhes, imagem, contato):
+        self.id = id
+        self.tipo = tipo
+        self.descricao = descricao
+        self.local = local
+        self.horario = horario
+        self.detalhes = detalhes
+        self.imagem = imagem
+        self.contato = contato

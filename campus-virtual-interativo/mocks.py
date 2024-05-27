@@ -140,3 +140,39 @@ servico3 = Servico(
 )
 
 servicosMocks = [servico1, servico2, servico3]
+
+# Setando os mocks do tranporte
+transporte1 = Transporte(
+    1,
+    'Ônibus',
+    'Ônibus universitário com várias rotas cobrindo diferentes áreas da cidade.',
+    'Ponto de ônibus - Bloco 1',
+    'Seg-Sex: 6h - 22h, Sáb: 8h - 14h',
+    'Rotas: Centro, Zona Norte, Zona Sul',
+    'img/onibus-univassouras.png',
+    '(24) 2471-8300'
+)
+
+transporte2 = Transporte(
+    2,
+    'Estacionamento',
+    'Estacionamento amplo e seguro para estudantes, professores e visitantes.',
+    'Bloco 2 - Univassouras',
+    'Todos os dias: 6h - 22h',
+    'Capacidade: 200 vagas, Acesso controlado por crachá',
+    'img/estacionamento-univassouras.png',
+    '(24) 2471-8301'
+)
+
+transporte3 = Transporte(
+    3,
+    'Compartilhamento de Bicicletas',
+    'Sistema de compartilhamento de bicicletas para fácil mobilidade dentro e fora do campus.',
+    'Pontos de retirada: Bloco 1, Bloco 3',
+    'Todos os dias: 6h - 22h',
+    'Aplicativo disponível para reserva e pagamento',
+    'img/bicicletas-univassouras.png',
+    '(24) 2471-8302'
+)
+
+transportesMocks = [transporte1, transporte2, transporte3]
